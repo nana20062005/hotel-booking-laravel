@@ -1,0 +1,91 @@
+/* ================================
+   File: public/css/footer.css
+   Mô tả: Giao diện footer hiện đại cho HotelBook
+================================ */
+
+footer {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: #f1f5f9;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+    padding: 60px 80px;
+    margin-top: 80px;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer h3 {
+    color: #38bdf8; /* xanh nhạt dịu mắt */
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+footer p,
+footer li,
+footer a {
+    color: #cbd5e1;
+    font-size: 15px;
+    line-height: 1.8;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #38bdf8;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Logo section */
+footer div:first-child h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #38bdf8;
+}
+
+footer div:first-child p {
+    color: #94a3b8;
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 300px;
+}
+
+/* Contact section */
+footer div:last-child {
+    grid-column: 1 / -1;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 20px;
+    padding-top: 25px;
+    font-size: 14px;
+    color: #94a3b8;
+}
+
+/* Hover hiệu ứng nhẹ */
+footer div:hover h3 {
+    color: #f8fafc;
+    transition: color 0.3s ease;
+}
+
+/* Responsive cho mobile */
+@media (max-width: 768px) {
+    footer {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    footer div:first-child p {
+        margin: 0 auto;
+    }
+
+    footer div:last-child {
+        margin-top: 30px;
+    }
+}

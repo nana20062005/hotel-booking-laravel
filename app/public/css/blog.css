@@ -1,0 +1,152 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+
+/* ========== HERO SECTION ========== */
+.blog-hero {
+    background: linear-gradient(135deg, rgba(0,102,204,0.9), rgba(102,126,234,0.9));
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.blog-hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.blog-hero p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* ========== BLOG GRID ========== */
+.blog-container {
+    max-width: 1300px;
+    margin: 80px auto;
+    padding: 0 50px;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 35px;
+}
+
+/* ========== BLOG CARD ========== */
+.blog-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Image (nếu dùng <div style="background-image"> hoặc <img>) */
+.blog-image {
+    position: relative;
+    height: 220px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+.blog-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.blog-card:hover .blog-image img {
+    transform: scale(1.05);
+}
+
+/* ========== BLOG CONTENT ========== */
+.blog-content {
+    flex: 1;
+    padding: 25px 25px 35px;
+}
+
+.blog-content h2 {
+    font-size: 22px;
+    color: #0066CC;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.blog-content p {
+    color: #555;
+    font-size: 15px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.btn-read {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    background: #FF6B35;
+    padding: 10px 22px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-read:hover {
+    background: #e25728;
+    transform: translateY(-2px);
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 1024px) {
+    .blog-hero h1 {
+        font-size: 40px;
+    }
+
+    .blog-container {
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .blog-hero {
+        padding: 80px 20px;
+    }
+
+    .blog-hero h1 {
+        font-size: 34px;
+    }
+
+    .blog-grid {
+        gap: 25px;
+    }
+
+    .blog-content h2 {
+        font-size: 20px;
+    }
+
+    .btn-read {
+        padding: 9px 18px;
+        font-size: 14px;
+    }
+}

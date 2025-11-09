@@ -1,0 +1,99 @@
+[
+  {
+    "id": 1,
+    "name": "Phòng Deluxe Hướng Biển",
+    "price": "2.000.000₫ / đêm",
+    "rating": 4.8,
+    "image": "images/rooms/deluxe_sea.jpg",
+    "features": ["🏖️ View biển", "🛏️ Giường đôi", "🍳 Bữa sáng miễn phí"]
+  },
+  {
+    "id": 2,
+    "name": "Phòng Standard Thành Phố",
+    "price": "1.200.000₫ / đêm",
+    "rating": 4.6,
+    "image": "images/rooms/standard_city.jpg",
+    "features": ["🌆 View thành phố", "☕ Miễn phí cà phê", "📶 WiFi tốc độ cao"]
+  },
+  {
+    "id": 3,
+    "name": "Suite Gia Đình",
+    "price": "3.500.000₫ / đêm",
+    "rating": 4.9,
+    "image": "images/rooms/family_suite.jpg",
+    "features": ["👨‍👩‍👧‍👦 4 người", "🍽️ Bếp riêng", "🛁 Phòng tắm lớn"]
+  },
+  {
+    "id": 4,
+    "name": "Phòng Executive Cao Cấp",
+    "price": "2.800.000₫ / đêm",
+    "rating": 4.7,
+    "image": "images/rooms/executive_luxury.jpg",
+    "features": ["💼 Bàn làm việc", "🪟 Ban công", "🧺 Dịch vụ giặt ủi"]
+  },
+  {
+    "id": 5,
+    "name": "Phòng VIP Suite Hướng Biển",
+    "price": "4.200.000₫ / đêm",
+    "rating": 5.0,
+    "image": "images/rooms/vip_suite.jpg",
+    "features": ["🌊 View đại dương", "🛏️ King Bed", "🥂 Dịch vụ phòng 24/7"]
+  },
+  {
+    "id": 6,
+    "name": "Phòng Standard Garden View",
+    "price": "1.000.000₫ / đêm",
+    "rating": 4.5,
+    "image": "images/rooms/standard_garden.jpg",
+    "features": ["🌳 View vườn", "🛏️ Giường đơn", "📶 WiFi miễn phí"]
+  },
+  {
+    "id": 7,
+    "name": "Phòng Superior Đà Lạt",
+    "price": "1.800.000₫ / đêm",
+    "rating": 4.6,
+    "image": "images/rooms/superior_dalat.jpg",
+    "features": ["🌲 View đồi", "🔥 Lò sưởi", "☕ Trà miễn phí"]
+  },
+  {
+    "id": 8,
+    "name": "Phòng Honeymoon Lãng Mạn",
+    "price": "3.200.000₫ / đêm",
+    "rating": 4.9,
+    "image": "images/rooms/honeymoon.jpg",
+    "features": ["💞 Trang trí đặc biệt", "🛁 Bồn tắm đôi", "🍷 Rượu vang chào mừng"]
+  },
+  {
+    "id": 9,
+    "name": "Phòng Business Class",
+    "price": "2.300.000₫ / đêm",
+    "rating": 4.7,
+    "image": "images/rooms/business_class.jpg",
+    "features": ["💻 Bàn làm việc", "☕ Máy pha cà phê", "🚗 Dịch vụ đưa đón sân bay"]
+  },
+  {
+    "id": 10,
+    "name": "Phòng Family View Biển",
+    "price": "3.000.000₫ / đêm",
+    "rating": 4.8,
+    "image": "images/rooms/family_ocean.jpg",
+    "features": ["👨‍👩‍👧‍👦 4 người", "🏖️ View biển", "🍳 Bữa sáng miễn phí"]
+  },
+  {
+    "id": 11,
+    "name": "Phòng Standard View Hồ",
+    "price": "1.400.000₫ / đêm",
+    "rating": 4.5,
+    "image": "images/rooms/standard_lake.jpg",
+    "features": ["🌅 View hồ", "🛏️ Giường đôi", "📺 TV màn hình phẳng"]
+  },
+  {
+    "id": 12,
+    "name": "Phòng Deluxe Twin",
+    "price": "2.200.000₫ / đêm",
+    "rating": 4.8,
+    "image": "images/rooms/deluxe_twin.jpg",
+    "features": ["🛏️ 2 giường đơn", "🍽️ Phòng ăn riêng", "☕ Máy pha cà phê"]
+  }
+]
+

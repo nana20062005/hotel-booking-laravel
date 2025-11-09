@@ -2,9 +2,19 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\FrontendController;
+use App\Http\Controllers\BookingController;
+
+//giao diện người dùng
+Route::get('/', [FrontendController::class, 'home'])->name('home');
+Route::get('/rooms', [FrontendController::class, 'rooms'])->name('rooms');
+Route::get('/booking/{id}', [BookingController::class, 'show'])->name('booking');
+Route::get('/deals', [FrontendController::class, 'deals'])->name('deals');
+Route::get('/blog', [FrontendController::class, 'blog'])->name('blog');
+Route::get('/contact', [FrontendController::class, 'contact'])->name('contact');
 
 // Trang chủ → chuyển về đăng nhập
-Route::get('/', function () {
+Route::get('/login', function () {
     return redirect()->route('login');
 });
 

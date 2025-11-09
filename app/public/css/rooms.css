@@ -1,0 +1,261 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ========== HERO SECTION ========== */
+.rooms-hero {
+    background: linear-gradient(135deg, rgba(0,102,204,0.9), rgba(102,126,234,0.9));
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.rooms-hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.rooms-hero p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* ========== FILTER SECTION ========== */
+.filter-section {
+    background: #fff;
+    padding: 25px 0;
+    border-bottom: 1px solid #eee;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.filter-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.filter-group label {
+    font-weight: 600;
+    font-size: 14px;
+    color: #555;
+}
+
+.filter-group select {
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    width: 200px;
+    transition: all 0.3s ease;
+}
+
+.filter-group select:focus {
+    border-color: #0066cc;
+    outline: none;
+}
+
+.btn-filter {
+    background: #0066CC;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-filter:hover {
+    background: #004f9a;
+    transform: translateY(-2px);
+}
+
+/* ========== ROOMS GRID ========== */
+.rooms-container {
+    max-width: 1300px;
+    margin: 80px auto;
+    padding: 0 50px;
+}
+
+.rooms-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+/* ========== ROOM CARD ========== */
+.room-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.room-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.room-image {
+    height: 220px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.room-info {
+    padding: 25px;
+}
+
+.room-info h2 {
+    font-size: 20px;
+    color: #0066CC;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.room-rating {
+    color: #FFB800;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.room-features {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.room-features li {
+    background: #f0f0f0;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    color: #555;
+}
+
+.room-price {
+    font-size: 20px;
+    font-weight: 700;
+    color: #FF6B35;
+    margin-bottom: 15px;
+}
+
+.btn-book {
+    background: #FF6B35;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-book:hover {
+    background: #e25728;
+    transform: translateY(-2px);
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 1024px) {
+    .rooms-hero h1 {
+        font-size: 40px;
+    }
+    .rooms-container {
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .rooms-hero h1 {
+        font-size: 32px;
+    }
+    .filter-form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .filter-group select {
+        width: 100%;
+    }
+    .rooms-container {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .room-info h2 {
+        font-size: 18px;
+    }
+    .room-price {
+        font-size: 18px;
+    }
+    .btn-book {
+        width: 100%;
+    }
+}
+/* --- Bộ lọc tìm kiếm --- */
+.filter-container {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.filter-form {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.filter-form input,
+.filter-form select {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    min-width: 180px;
+    font-size: 14px;
+    background-color: #fff;
+}
+
+.btn-filter {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-filter:hover {
+    background-color: #0056b3;
+}
